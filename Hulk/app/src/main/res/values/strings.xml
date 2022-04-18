@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hulk</string>
+    <string name="save_text">Save</string>
+    <string name="downloading_text">Downloading</string>
+    <string name="stop_text">Stop</string>
+    <string name="offline_mode_text">Offline Mode</string>
+    <string name="save_video_info">Video will be saved</string>
+    <string name="parallel_download_error">A video download is in progress</string>
+
+<!--    Download Service-->
+    <string name="download_service_description">Responsible for downloading files</string>
+    <string name="download_service_name">Download Service</string>
+
+<!--    Notification-->
+
+    <string name="download_service_channel_name">Downloads</string>
+    <string name="download_service_channel_description">Shows notification related to file download</string>
+</resources>

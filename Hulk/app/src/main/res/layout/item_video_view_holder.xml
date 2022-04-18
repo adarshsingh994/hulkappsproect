@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/video_view_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="@+id/video_view_thumbnail"
+        app:layout_constraintEnd_toEndOf="@+id/video_view_thumbnail"
+        app:layout_constraintStart_toStartOf="@+id/video_view_thumbnail"
+        app:layout_constraintTop_toTopOf="@+id/video_view_thumbnail" />
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/video_view_player_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/video_view_thumbnail"
+        app:layout_constraintEnd_toEndOf="@+id/video_view_thumbnail"
+        app:layout_constraintStart_toStartOf="@+id/video_view_thumbnail"
+        app:layout_constraintTop_toTopOf="@+id/video_view_thumbnail" />
+
+    <ImageView
+        android:id="@+id/video_view_download_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_download_done"
+        app:layout_constraintBottom_toBottomOf="@+id/video_view_thumbnail"
+        app:layout_constraintEnd_toEndOf="@+id/video_view_thumbnail"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_view_thumbnail">
+        <TextView
+            android:id="@+id/video_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The big black buck"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/video_view_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="This is the subtitle of title" />
+
+        <TextView
+            android:id="@+id/video_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="The big blck bck is gou t yty yfyfy frfyfyf trfyf53se r43wsdrtf 43sfgyut edtbtf drcredrefy tesredfytgg edrefytbu ded f6 f54d 54f grdedtygytf edtrfv res4e f 6rd 4es." />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
